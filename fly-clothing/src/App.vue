@@ -1,8 +1,4 @@
 <template>
-  <!-- <nav>
-    <router-link to="/" class="btn btn-primary">Home</router-link> |
-    <router-link to="/about">abt</router-link>
-  </nav> -->
   <div class="container">
     <nav class="navbar navbar-light  navbar-expand-md d-flex justify-content-between w-100">
       <router-link to="/#" class="navbar-brand text-success d-flex align-items-center">
@@ -37,7 +33,7 @@
     </div>
     </nav>
   </div>
-  <router-view />
+  <router-view :productsList="products"/>
 </template>
 
 <style lang="scss">
@@ -45,3 +41,13 @@ nav{
   background-color:rgb(231, 231, 231) !important;
 }
 </style>
+<script>
+import res from './assets/products.json';
+export default {
+  data(){
+    return{
+      products:res,
+    }
+  },
+}
+</script>
