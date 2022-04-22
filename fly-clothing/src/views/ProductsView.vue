@@ -1,7 +1,7 @@
 <template>
-  <div class="products container">
+  <div class="products container-md">
     <div class="row g-4">
-      <div class="col-3" v-for="(card,i) in productsList" key="i">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="(card,i) in productsList" key="i">
         <div class="card justify-content-between">
           <img :src="images[i]" class="card-img-top" alt="..." />
           <div class="card-body">

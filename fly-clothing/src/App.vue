@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-md">
     <nav class="navbar navbar-light  navbar-expand-md d-flex justify-content-between w-100">
       <router-link to="/#" class="navbar-brand text-success d-flex align-items-center">
         <img
