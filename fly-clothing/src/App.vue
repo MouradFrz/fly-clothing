@@ -16,7 +16,6 @@
     </button>
     <div class="collapse navbar-collapse g-5 justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        
         <li class="nav-item">
           <router-link to="/" class="nav-link active" aria-current="page" >Home</router-link>
         </li>
