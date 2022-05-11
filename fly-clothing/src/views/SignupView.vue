@@ -2,6 +2,7 @@
 <template>
 <KeepAlive>
   <div class="container d-flex justify-content-center">
+    <p>{{ $store.state.count}}</p>
     <form
       action=""
       @submit="validateBeforeSubmit"
