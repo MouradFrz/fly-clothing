@@ -1,5 +1,7 @@
-<template>
-  <div class="filter container-md">
+<template >
+<div style=" background: rgb(255, 222, 222);" class="container">
+  <div class="row" style=" background: rgb(255, 222, 222);">
+  <div class="filter container-md col-md-3 col-12">
     <nav class="navbar navbar-light">
       <div class="container-fluid d-flex justify-content-start bg-main m-0">
         <div class="filter-container">
@@ -48,11 +50,11 @@
       </div>
     </nav>
   </div>
-  <div class="products container-md">
+  <div class="products container-md col-12 col-md-9">
     <h1 v-if="notAvailable">No items matching the necessary conditions</h1>
-    <div class="row g-4">
+    <div class="row g-4 mt-2 mb-5">
       <div
-        class="col-12 col-sm-6 col-md-4 col-lg-3"
+        class="col-12 col-sm-6 col-md-6 col-lg-4"
         v-for="(card, i) in changableList"
         key="i"
       >
@@ -70,7 +72,8 @@
       </div>
     </div>
   </div>
-
+  </div>
+</div>
 </template>
 
 
@@ -81,8 +84,8 @@ option{
   border: none;
 }
 .filter-container {
-  margin-right: 40px;
-  width: 200px;
+
+  width: 100%;
 }
 .card {
   height: 100%;
@@ -110,7 +113,7 @@ option{
 </style>
 
 <script>
-
+import res from '../assets/products.json';
 export default {
   
   data() {
@@ -119,7 +122,7 @@ export default {
       model: "",
       color: "",
       minPrice: 0,
-      changableList: this.productsList,
+      changableList: res,
       notAvailable: false,
       
     };
